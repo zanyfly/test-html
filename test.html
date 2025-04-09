@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 添加 viewport 设置以适配手机 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deeplink test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1em;
+            font-size: 1rem;
+            /* 使用相对单位 */
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            font-size: 1rem;
+            margin: 1em 0;
+        }
+        
+        button {
+            margin-bottom: 1em;
+            font-size: 1rem;
+            padding: 0.5em 1em;
+        }
+        
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        /* 针对小屏幕的进一步优化 */
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.95rem;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            button {
+                font-size: 0.95rem;
+                padding: 0.4em 0.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>deeplink test</h1>
+
+    <p>
+        <p>deeplink：iopay://send?chainId=56</p>
+        <button type="button">
+        <a href="iopay://send?chainId=56" style= 'color:#000000; text-decoration : none'>
+            send
+        </a>
+    </button>
+        <p>deeplink：iopay://buy?chainId=56</p>
+        <button type="button">
+        <a href="iopay://buy?chainId=56" style= 'color:#000000; text-decoration : none'>
+            buy
+        </a>
+    </button>
+        <div>deeplink：iopay://swap?chainId=4689&from=0x52df59be0be8abdabba9e3862c8c0f1f8b3fe9ca&to=0x8e33229206f726993e4a7bf7da2347f3743bf8b4</div>
+        <button type="button">
+        <a href="iopay://swap?chainId=4689&from=0x52df59be0be8abdabba9e3862c8c0f1f8b3fe9ca&to=0x8e33229206f726993e4a7bf7da2347f3743bf8b4" style= 'color:#000000; text-decoration : none'>
+            swap
+        </a>
+    </button>
+
+    </p>
+</body>
+
+</html>
